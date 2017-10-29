@@ -11,7 +11,7 @@
   :dependencies [
                  [com.almworks.sqlite4java/sqlite4java "1.0.392"]
                  [com.amazonaws/DynamoDBLocal "1.11.0.1"]
-                 [kosmos "0.0.6"]
+                 [kosmos "0.0.7"]
                  [kosmos/kosmos-dynamodb-local-native "1.0.0"]
                  [org.clojure/java.classpath "0.2.3"]
                  ]
@@ -20,19 +20,16 @@
 
   :profiles {:dev {:resource-paths ["dev-resources"]
                    :dependencies [[org.clojure/clojure "1.8.0"]
-                                  [org.clojure/tools.logging "0.3.1"]
-                                  [log4j "1.2.15"
-                                   :exclusions [javax.mail/mail
-                                                javax.jms/jms
-                                                com.sun.jdmk/jmxtools
-                                                com.sun.jmx/jmxri]]
-                                  [org.slf4j/slf4j-log4j12 "1.6.1"]]}}
+                                  [org.clojure/tools.logging "0.4.0"]
+                                  [org.slf4j/slf4j-log4j12 "1.7.25"]]}}
 
   :deploy-repositories [["snapshots"
                          {:url "https://clojars.org/repo"
+                          :sign-releases false
                           :creds :gpg}]
                         ["releases"
                          {:url "https://clojars.org/repo"
+                          :sign-releases false
                           :creds :gpg}]]
 
   :release-tasks [["vcs" "assert-committed"]
