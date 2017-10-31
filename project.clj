@@ -1,4 +1,4 @@
-(defproject kosmos/kosmos-dynamodb-local "0.0.3-SNAPSHOT"
+(defproject kosmos/kosmos-dynamodb-local "0.0.3"
 
   :description "kosmos local dynamodb database component (for testing)"
 
