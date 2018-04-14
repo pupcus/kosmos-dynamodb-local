@@ -2,9 +2,9 @@
 
   :description "kosmos local dynamodb database component (for testing)"
 
-  :url "https://bitbucket.org/pupcus/kosmos-dynamodb-local"
+  :url "https://github.com/pupcus/kosmos-dynamodb-local"
 
-  :scm {:url "git@bitbucket.org:bitbucket/kosmos-dynamodb-local"}
+  :scm {:url "git@github.com:pupcus/kosmos-dynamodb-local.git"}
 
   :author "Michael Pendergrass"
 
